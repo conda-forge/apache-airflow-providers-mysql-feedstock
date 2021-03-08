@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-mysql" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-mysql-{{ version }}.tar.gz
-  sha256: 17cb706f644f3cd29008cc0eae89807a5493218e123db15b12d71a268472388b
+  sha256: 049314e03fd89fe1b462bfa03745faf6d57c318c58335aeb0d5fa7a25ad8ee9f
 
 build:
   number: 0
