@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-mysql" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://archive.apache.org/dist/airflow/providers/{{ name }}-{{ version }}.tar.gz
-  sha256: 17338a36e2e286dafec96600b7a2d45a0998df42afea3a48d516c3f6a9e01241
+  sha256: 4f22a47368a8a9c0b861082bcaeacf297ed9d825eb972dcb4b8e8719df5c86ef
 
 build:
   number: 0
