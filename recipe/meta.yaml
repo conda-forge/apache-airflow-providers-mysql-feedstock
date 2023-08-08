@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-mysql" %}
-{% set version = "5.2.0" %}
+{% set version = "5.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-mysql-{{ version }}.tar.gz
-  sha256: 116a8ea63ef484d79ddabf462d423ef4712e2312770db4ece683990879099049
+  sha256: da948fb1f4b9a9480ea1903df58aea79a3ff717f99daf670108199390a0cf40e
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - python >=3.8
     - apache-airflow-providers-common-sql >=1.3.1
     - apache-airflow >=2.4.0
+    - mysql-connector-python >=8.0.11
     - mysqlclient >=1.3.6
 
 test:
