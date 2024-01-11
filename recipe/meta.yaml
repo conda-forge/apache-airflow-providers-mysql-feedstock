@@ -1,13 +1,13 @@
 {% set name = "apache-airflow-providers-mysql" %}
-{% set version = "5.5.0" %}
+{% set version = "5.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 525665715441dba14d68100fb6bb60ab4dc87bb6e1e7b0bd76906c38a50642eb
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_mysql-{{ version }}.tar.gz
+  sha256: e9255c4ad76d1c37913d556bd554ece538e1687adcdc60da7b635ab796eb44b1
 
 build:
   noarch: python
