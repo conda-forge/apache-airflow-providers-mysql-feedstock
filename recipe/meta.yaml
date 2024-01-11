@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_mysql-{{ version }}.tar.gz
   sha256: e9255c4ad76d1c37913d556bd554ece538e1687adcdc60da7b635ab796eb44b1
 
 build:
