@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.dev0
+    - python >=3.9,<4.dev0
     - flit-core >=3.2,<4
     - pip
   run:
-    - python >=3.8,<4.dev0
+    - python >=3.9,<4.dev0
     - apache-airflow-providers-common-sql >=1.17.0
     - apache-airflow >=2.8.0
     # 8.0.31 has bad dependencies
-    - mysql-connector-python >=8.0.29
+    - mysql-connector-python >=8.0.29,!=8.0.31
     - mysqlclient >=1.4.0
 
 test:
