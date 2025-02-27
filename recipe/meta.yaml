@@ -21,12 +21,14 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - aiomysql >=0.2.0
-    - apache-airflow-providers-common-sql >=1.20.0
     - apache-airflow >=2.9.0
-    # 8.0.31 has bad dependencies
-    - mysql-connector-python >=8.0.29
+    - apache-airflow-providers-common-sql >=1.20.0
+    # upstream is skipping OSX but this seems not to be an issue
+    # that shoulda affect conda-forge
     - mysqlclient >=1.4.0
+    # 8.0.31 has bad dependencies
+    - mysql-connector-python >=8.0.29,!=8.0.31
+    - aiomysql >=0.2.0
 
 test:
   imports:
@@ -41,10 +43,14 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-mysql for Apache Airflow
   license: Apache-2.0
+<<<<<<< HEAD
   license_file: airflow/providers/mysql/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-mysql/stable/index.html
   dev_url: https://github.com/apache/airflow/
+=======
+  license_file: src/airflow/providers/mysql/LICENSE
+>>>>>>> dc87068 (Update recipe with my grayskull autoupdate script)
 
 extra:
   recipe-maintainers:
