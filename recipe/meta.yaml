@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-mysql" %}
-{% set version = "6.1.0" %}
+{% set version = "6.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_mysql-{{ version }}.tar.gz
-  sha256: 2c6db2acf1be12c57606fdeaa3ff4d14ab4f4f6ac2b4aa638b82401593762a17
+  sha256: e3fdfc5854bb298980be8aeceb15c8c55a03f74e28701bf5d56e2c4f621197d1
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     # that shoulda affect conda-forge
     - mysqlclient >=1.4.0
     # 8.0.31 has bad dependencies
-    - mysql-connector-python >=8.0.29,!=8.0.31
+    - mysql-connector-python >=8.0.29
     - aiomysql >=0.2.0
 
 test:
