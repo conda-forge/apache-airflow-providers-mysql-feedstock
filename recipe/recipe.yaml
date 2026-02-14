@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-mysql
-  version: 6.4.3
+  version: "6.4.3"
 
 package:
   name: ${{ name|lower }}
@@ -28,6 +28,7 @@ requirements:
     - mysqlclient >=2.2.5
     - mysql-connector-python >=9.1.0
     - aiomysql >=0.2.0
+
 tests:
   - python:
       imports:
