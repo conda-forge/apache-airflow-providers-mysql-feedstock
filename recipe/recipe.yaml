@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-mysql
-  version: 6.4.2
+  version: 6.4.3
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_mysql-${{ version }}.tar.gz
-  sha256: 6de803ae878a486b354a27314b8b6cd412cdb4eeb921d7fb84c742263720e65a
+  sha256: d8ba533f146ee3b9b10aaeb2e5c76033cdc148eaea17eceff53c61612c090ac2
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - apache-airflow-providers-common-compat >=1.12.0
     - apache-airflow-providers-common-sql >=1.20.0
     - mysqlclient >=2.2.5
-    - mysql-connector-python >=9.1.0,!=9.6.0
+    - mysql-connector-python >=9.1.0
     - aiomysql >=0.2.0
 tests:
   - python:
