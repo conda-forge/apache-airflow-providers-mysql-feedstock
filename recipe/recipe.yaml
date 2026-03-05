@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-mysql
-  version: "6.4.3"
+  version: "6.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_mysql-${{ version }}.tar.gz
-  sha256: d8ba533f146ee3b9b10aaeb2e5c76033cdc148eaea17eceff53c61612c090ac2
+  sha256: 50b525e229cfc33e28175a497e92888eb3eef61b9b01196a850fbafce72e86a6
 
 build:
   noarch: python
