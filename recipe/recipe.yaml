@@ -26,7 +26,8 @@ requirements:
     - apache-airflow-providers-common-compat >=1.12.0
     - apache-airflow-providers-common-sql >=1.32.0
     - mysqlclient >=2.2.5
-    - mysql-connector-python >=9.1.0
+    # more restrictive for python >=3.12
+    - mysql-connector-python >=9.1.0,!=9.7.0
     - aiomysql >=0.2.0
 
 tests:
