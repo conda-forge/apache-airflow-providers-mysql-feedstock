@@ -27,6 +27,7 @@ requirements:
     - apache-airflow-providers-common-sql >=1.32.0
     - mysqlclient >=2.2.5
     # tightest of upstream's exclusions (python >=3.12)
+    # tightest of upstream's exclusions (python >=3.12)
     - mysql-connector-python >=9.1.0,!=9.7.0
     - aiomysql >=0.2.0
     - pymysql >=1.0.3,<1.2
