@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==4.1.0
+    - flit-core ==4.2.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
@@ -29,7 +29,9 @@ requirements:
     # tightest of upstream's exclusions (python >=3.12)
     # tightest of upstream's exclusions (python >=3.12)
     # tightest of upstream's exclusions (python >=3.12)
+    # tightest of upstream's exclusions (python >=3.12)
     - mysql-connector-python >=9.1.0,!=9.7.0
+    - asyncmy >=0.2.16
     - aiomysql >=0.2.0
     - pymysql >=1.0.3,<1.2
 
